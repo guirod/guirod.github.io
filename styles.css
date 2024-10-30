@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'pusab';
+    src: url('./fonts/8-bit-pusab.ttf');
+}
+body {
+    font-family: 'pusab','arial';
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+.rightmain, .leftmain {
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.main {
+    /* width: 400px; */
+    transition: 1s;
+    opacity: 1;
+}
+.leftmain {
+    justify-content: right;
+}
+.buttonleft {
+    display: flex;
+    top:55%;
+    left:28%;
+    width:40px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+}
+.buttonright {
+    display: flex;
+    top:55%;
+    left:70%;
+    width:40px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+}
+.cache {
+    display: none;
+    /* opacity: 0; */
+}
+
+
+.images div{
+    transition: width 500ms;
+
+    &.animated{
+        width: auto;
+    }
+}
